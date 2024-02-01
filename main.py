@@ -11,6 +11,7 @@ def encrypt(plain_text, shift_amount):
     for letter in plain_text:
         position = alphabet.index(letter)
         new_position = position + shift_amount
+        #last letters position start from 0
         if new_position > 25:
             new_position = new_position - 26
         new_letter = alphabet[new_position]
